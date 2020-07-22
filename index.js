@@ -26,7 +26,7 @@ class Square extends Polygon{
       const sqLength = this.sidesAry[0];
       return this.sidesAry.every(side=>side===sqLength)
     }
-    
+
   }
   get area(){
     if (this.countSides===4 && this.isValid){
