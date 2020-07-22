@@ -20,3 +20,12 @@ class Triangle extends Polygon{
     }
   }
 }
+class Square extends Polygon{
+  get isValid(){
+    if (this.countSides===4){
+      const sqLength = this.sideAry.charAt[0];
+      console.log(sqLength)
+      return this.sideAry.every(side=>side===sqLength)
+    }
+  }
+}
