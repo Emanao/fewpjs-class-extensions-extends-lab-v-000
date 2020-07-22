@@ -23,10 +23,14 @@ class Triangle extends Polygon{
 class Square extends Polygon{
   get isValid(){
     if (this.countSides===4){
-       const sqLength = this.sidesAry[0];
-      console.log(this.sidesAry);
-      console.log(this.sidesAry.every(side=>side===sqLength));
+      const sqLength = this.sidesAry[0];
       return this.sidesAry.every(side=>side===sqLength)
+    }
+    
+  }
+  get area(){
+    if (this.countSides===4 && this.isValid){
+        return Math.pow(this.sidesAry[0],2);
     }
   }
 }
